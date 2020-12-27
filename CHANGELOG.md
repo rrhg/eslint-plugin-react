@@ -9,11 +9,37 @@ This change log adheres to standards from [Keep a CHANGELOG](http://keepachangel
 * [`jsx-key`]: added `checkKeyMustBeforeSpread` option for new jsx transform ([#2835][] @morlay)
 * [`jsx-newline`]: add new rule ([#2693][] @jzabala)
 * [`jsx-no-constructed-context-values`]: add new rule which checks when the value passed to a Context Provider will cause needless rerenders ([#2763][] @dylanOshima)
+* [`jsx-indent-props`]: add `ignoreTernaryOperator` option ([#2846][] @SebastianZimmer)
+* [`jsx-no-target-blank`]: Add `warnOnSpreadAttributes` option ([#2855][] @michael-yx-wu)
 
 ### Fixed
 * [`display-name`]/component detection: avoid a crash on anonymous components ([#2840][] @ljharb)
 * [`prop-types`]: function in class that returns a component causes false warning in typescript ([#2843][] @SyMind)
+* [`jsx-no-target-blank`]: avoid a crash with a non-string literal ([#2851][] @ljharb)
+* [`jsx-no-script-url`]: avoid crash with boolean `href` ([#2871][] @ljharb, @AriPerkkio)
+* [`no-typos`]: avoid crash with computed method name ([#2870][] @ljharb, @AriPerkkio)
+* [`jsx-max-depth`]: avoid crash with childless jsx child ([#2869][] @ljharb, @AriPerkkio)
+* [`jsx-wrap-multilines`]: fix crash with `declaration`s that are on a new line after `=` ([#2875][] @ljharb)
+* [`no-unknown-property`]: avoid crash with prop named with Object.prototype key ([#2879][] @ljharb, @AriPerkkio)
+* [`prop-types`]: default argument does not count as props-types declaration ([#2877][] @golopot)
+* [`jsx-props-no-multi-spaces`]: fix a false positive for beside comments ([#2878][] @golopot)
+* [`jsx-no-undef`]: handle the TS parser combined with an invalid ecmaVersion ([#2882][] @ljharb)
 
+### Docs
+* [`no-unused-prop-types`]: Add new example to rule ([#2852][] @thehereward)
+
+[#2882]: https://github.com/yannickcr/eslint-plugin-react/issues/2882
+[#2879]: https://github.com/yannickcr/eslint-plugin-react/issues/2879
+[#2878]: https://github.com/yannickcr/eslint-plugin-react/pull/2878
+[#2877]: https://github.com/yannickcr/eslint-plugin-react/pull/2877
+[#2875]: https://github.com/yannickcr/eslint-plugin-react/issues/2875
+[#2871]: https://github.com/yannickcr/eslint-plugin-react/issues/2871
+[#2870]: https://github.com/yannickcr/eslint-plugin-react/issues/2870
+[#2869]: https://github.com/yannickcr/eslint-plugin-react/issues/2869
+[#2855]: https://github.com/yannickcr/eslint-plugin-react/pull/2855
+[#2852]: https://github.com/yannickcr/eslint-plugin-react/pull/2852
+[#2851]: https://github.com/yannickcr/eslint-plugin-react/issues/2851
+[#2846]: https://github.com/yannickcr/eslint-plugin-react/pull/2846
 [#2843]: https://github.com/yannickcr/eslint-plugin-react/pull/2843
 [#2840]: https://github.com/yannickcr/eslint-plugin-react/issues/2840
 [#2835]: https://github.com/yannickcr/eslint-plugin-react/pull/2835
